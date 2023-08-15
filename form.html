@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSM</title>
+    <link rel="stylesheet" href="style.css">
+
+      
+</head>
+<body>
+    <div class="root">
+        <div class="root2">
+    <div class="rleft"> <div class="action" >              
+        <button class="bt27" style="display:none; ">submit27</button>
+        <button class="bt29" style="display:none;">submit29</button></div>
+<!--     <button class="bt" style="display:none;">submit1</button>
+    <button class="bt" style="display:none;">submit2</button>
+        <button class="bt" style="display:none;">submit3</button>
+<button class="bt" style="display:none;">submit4</button>
+<button class="bt" style="display:none;">submit5</button>
+<button class="bt" style="display:none;">submit6</button>
+<button class="bt" style="display:none;">submit7</button>
+<button class="bt" style="display:none;">submit8</button>
+<button class="bt" style="display:none;">submit9</button>
+<button class="bt" style="display:none;">submit2</button> -->
+    </div>
+    <div class="main">
+          <button class="bt1" style="display:none;">submit</button>
+        <div class="top">
+            <div class="t1"></div>
+            <div class="t2"><h2>Admission Form</h2></div>
+        
+        </div>
+        <div class="form">
+            <form id="f">
+                <label for="name">Name:</label><input type="text" id="name" class="right height" name="name" required onclick="alert('Enter your full name')"><br><br>
+                <label for="fname">First name:</label><input type="text" id="fname" class="right height" required  onclick="alert('Enter your first name')"><br><br>
+                <label for="mname">Middle name:</label><input type="text" id="mname" class="right height" required  onclick="alert('Enter your middle name')"><br><br>
+                <label for="lname">Last name:</label><input type="text" id="lname" class="right height" required  onclick="alert('Enter your family name')"><br><br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" class="right " onclick="alert('Congrats! you became male?')">Male &nbsp 
+                <input type="radio" name="gender" class="right" onclick="alert('Congrats! you became female?')">Female &nbsp 
+                <input type="radio" name="gender" class="right" onclick="alert('Congrats! you became god gifted?')">Others<br><br>
+                <label for="course">Course:</label><select id="course" class="right height">
+                    <option value="BBS">BBS</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BIM">BIM</option>
+                  </select><br><br>
+                <label for="number">Phone no:</label><input type="number" id="number" class="right height" required ><br><br>
+                <label for="address">Address:</label><input type="text" id="address" class="right height" required ><br>
+            </form>
+        </div>
+        <!-- <div class="btn"><button type="button">submit</button>-->
+
+            <div class="btn"><input type="submit" value="submit" class="b1"> <button class="btn1" style="display:none;" >submit</button>
+                <button class="btn2" style="display:none;">submit</button>
+                <button class="btn3" style="display:none;">submit</button>
+                 <button class="btn4" style="display:none;background-color: green;">submit</button>
+                 <button class="btn5" style="display:none;">submit</button>
+                 <button class="btn6" style="display:none;">submit</button>
+                 <button class="btn7" style="display:none;">submit</button>
+                 <button class="btn8" style="display:none;">submit</button>
+
+    </div>
+
+</div>
+<div class="rright"></div>
+</div>
+</div>
+
+</body>
+</html>
+    <script >
+        
+        let event=document.querySelector(".b1");
+        event.onclick=()=>{
+            console.log("hello")
+        alert("Be ready.....");
+        let a=confirm("If You want to submit this form click ok");
+        if(a){
+            let b=prompt("2+7-(2-12)*2= ?");
+            if(b=="29"){
+                alert("Aaich tallent! You deserve something special🤩");
+                document.querySelector(".btn1").style.display="block";
+                alert("one extra button🤣🤣🤣🤣🤣")
+            }
+            else{
+            alert("Sorry! you have to start from first😝");
+            document.getElementById("f").reset();
+        }
+    }
+
+        else{
+         document.getElementById("f").reset();
+        }
+        }
+    document.querySelector(".btn1").onclick=()=>{
+        let test=confirm("Bore vako vaye click cancel🙂 ,if not then click ok 😁")
+        if(test){
+            alert("Hunu ni vayena ni?😂");
+        document.querySelector(".btn2").style.display="block";
+        document.querySelector(".btn3").style.display="block";
+        document.querySelector(".btn4"). style.display="block";
+
+        }
+        else{
+
+        document.querySelector(".btn2").style.display="block";
+        document.querySelector(".btn3").style.display="block";
+        document.querySelector(".btn4").style.display="block";
+         document.querySelector(".btn5").style.display="block";
+         document.querySelector(".btn6").style.display="block";
+        document.querySelector(".btn7").style.display="block";
+        document.querySelector(".btn8").style.display="block";
+ 
+        }
+    }
+    document.querySelector(".btn4").onclick=()=>{
+        alert("Murkha budhii k sabai green color sign of success hunxa ra😪😪");
+        document.querySelector(".btn5").style.display="block";
+         document.querySelector(".btn6").style.display="block";
+        document.querySelector(".btn7").style.display="block";
+        document.querySelector(".btn8").style.display="block";
+        document.querySelector(".btn2").style.backgroundColor="red";
+        document.querySelector(".btn6").style.backgroundColor="red";
+    }
+        
+document.querySelector(".btn2").onclick = () => {
+     document.querySelector(".bt27").style.display="block";
+    document.querySelector(".bt29").style.display="block";
+    let rleftElement = document.querySelector(".rleft");
+    for (let i = 1; i <= 48; i++) {
+        let newButton = document.createElement("button");
+        newButton.className = "bt" +(i+29);
+        newButton.textContent = "submit" +(i+i*30);
+        rleftElement.appendChild(newButton);
+    }
+    
+
+}
+document.querySelector(".btn6").onclick = () => {
+    let rrightElement = document.querySelector(".rright");
+    for (let i = 51; i <= 100; i++) {
+        let newButton = document.createElement("button");
+        newButton.className = "bt" + i;
+        newButton.textContent = "submit" + i;
+        rrightElement.appendChild(newButton);
+        
+    }
+
+
+}
+document.querySelector(".btn8").onclick = () => {
+        alert("Think before act🥱");
+        document.getElementById("f").reset();
+    }
+    document.querySelector(".btn5").onclick = () => {
+        alert("Sorry please try again");
+        document.getElementById("f").reset();
+    }
+    document.querySelector(".btn3").onclick = () => {
+        alert("Sorry please try again");
+        document.getElementById("f").reset();
+    }
+    document.querySelector(".btn8").onclick = () => {
+        let c=confirm("if u want to back click ok else cancel🙂");
+        if(c){
+            document.getElementById("f").reset();
+        }
+        else{
+            alert("Your calcuation is your answer,just use this sentence🤐")
+
+    }
+        
+    }
+    document.querySelector(".bt29").onclick = () => {
+        let rleftElement = document.querySelector(".rleft");
+        let rrightElement = document.querySelector(".rright");
+        let btnElement = document.querySelector(".btn");
+
+        rleftElement.innerHTML = '';
+        rrightElement.innerHTML = '';
+        btnElement.innerHTML="<h3>Finally! Your form is submitted😪<h3>"
+    }
+    
+    document.querySelector(".btn7").onclick = () => {
+        alert("Tips,just recap from the start u will get your submit button😉");
+    }
+    document.querySelector(".bt27").onclick = () => {
+
+    document.querySelector(".btn3").style.backgroundColor="yellow";
+        document.querySelector(".btn5").style.backgroundColor="yellow";
+    }
+
+    </script>
+
+
