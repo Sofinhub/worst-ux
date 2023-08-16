@@ -81,8 +81,13 @@ html{
 .form{
 	padding-top: 3vh;
 	height: 65%;
+	width: 100%;
+	
+	
+	
 /*	background-color: red;*/
 }
+
 label{
 	display: inline-block;
 	background-color: white;
