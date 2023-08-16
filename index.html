@@ -26,13 +26,14 @@
 <button class="bt" style="display:none;">submit2</button> -->
     </div>
     <div class="main">
-          <button class="bt1" style="display:none;">submit</button>
+          
         <div class="top">
             <div class="t1"></div>
             <div class="t2"><h2>Admission Form</h2></div>
         
         </div>
         <div class="form">
+            <div class="bg"></div>
             <form id="f">
                 <label for="name">Name:</label><input type="text" id="name" class="right height" name="name" required onclick="alert('Enter your full name')"><br><br>
                 <label for="fname">First name:</label><input type="text" id="fname" class="right height" required  onclick="alert('Enter your first name')"><br><br>
@@ -178,9 +179,15 @@ document.querySelector(".btn8").onclick = () => {
         let rleftElement = document.querySelector(".rleft");
         let rrightElement = document.querySelector(".rright");
         let btnElement = document.querySelector(".btn");
-
+        let formElement=document.querySelector(".form");
+        let t2=document.querySelector(".t2");
         rleftElement.innerHTML = '';
         rrightElement.innerHTML = '';
+        formElement.innerHTML='';
+        t2.innerHTML="<h2>We will meet soon😈😈</h2>";
+        t2.style.Color="red";
+        formElement.style.backgroundImage="url(117955934_2759923337597292_8110725342890641364_n.jpg)";
+        formElement.style.backgroundSize = "100% 100%";
         btnElement.innerHTML="<h3>Finally! Your form is submitted😪<h3>"
     }
     
